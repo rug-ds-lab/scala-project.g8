@@ -1,2 +1,1 @@
-scala-project.g8
-================
+Project aims at providing a standard [giter8](https://github.com/n8han/giter8) template for scala projects.
