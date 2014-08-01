@@ -1,6 +1,6 @@
 name := "$name$"
 
-organization := "$organization$"
+organization := "$group$"
 
 version := "$version$"
 
