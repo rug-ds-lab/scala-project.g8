@@ -1,4 +1,4 @@
-package $group$.$name$
+package $organization$.$name;format="word-only"$
 
 //import org.scalatest.FunSpec
 
