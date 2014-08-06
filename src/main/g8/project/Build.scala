@@ -1,5 +1,5 @@
 import sbt._
-import rug.sbt._
+import rugds.sbt._
 
 object ScalaBuild extends Build {
   val project = (
