@@ -1,4 +1,1 @@
 
-version := "$version$"
-
-organization := "$organization$"
