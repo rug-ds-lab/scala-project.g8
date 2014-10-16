@@ -5,10 +5,11 @@ val releases  = nexus + "/content/repositories/rug.release"
 
 val repositories = Seq(
   "RugDS Snapshots" at snapshots,
-  "RugDS Releases"  at releases
+  "RugDS Releases"  at releases,
+  "typesafe"        at "http://repo.typesafe.com/typesafe/releases"
 )
 
 resolvers ++= repositories
 
 
-addSbtPlugin("rugds" % "sbt-scala-parent" % "0.0.7")
+addSbtPlugin("rugds" % "sbt-scala-parent" % "0.0.14")
