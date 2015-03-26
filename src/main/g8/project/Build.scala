@@ -7,6 +7,6 @@ object ScalaBuild extends Build {
     .aggregate($name;format="camel"$Project)
 
   lazy val $name;format="camel"$Project = defineProject(scalaProject, "$name$") settings (
-    
+    mainClass in Compile = Some("$organization__packaged$.$name__word$.$name$")
   )
 }
