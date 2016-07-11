@@ -1,16 +1,22 @@
 
-val nexus     = "http://sm4all-project.eu/nexus"
-val snapshots = nexus + "/content/repositories/rug.snapshot"
-val releases  = nexus + "/content/repositories/rug.release"
+val nexus = "http://nexus.rugds.org"
+val snapshots = nexus + "/repository/rugds.snapshot.private"
+val releases = nexus + "/repository/rugds.release.private"
+
+val nexusOss     = "http://nexus.rugds.org"
+val snapshotsOss = nexusOss + "/repository/rugds.snapshot.oss"
+val releasesOss  = nexusOss + "/repository/rugds.release.oss"
 
 val repositories = Seq(
-  "RugDS Snapshots" at snapshots,
-  "RugDS Releases"  at releases,
-  "typesafe"        at "http://repo.typesafe.com/typesafe/releases",
-  "scalaz-bintray"  at "http://dl.bintray.com/scalaz/releases"
+  "RugDS Private Snapshots" at snapshots,
+  "RugDS Private Releases"  at releases,
+  "RugDS OSS Snapshots"     at snapshotsOss,
+  "RugDS OSS Releases"      at releasesOss,
+  "typesafe"                at "http://repo.typesafe.com/typesafe/releases",
+  "scalaz-bintray"          at "http://dl.bintray.com/scalaz/releases"
 )
 
 resolvers ++= repositories
 
 
-addSbtPlugin("rugds" % "sbt-scala-parent" % "0.3.5")
+addSbtPlugin("rugds" % "sbt-scala-parent" % "0.7.0")
