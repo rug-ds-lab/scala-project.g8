@@ -1,11 +1,12 @@
 
-val nexus = "http://nexus.rugds.org"
+val nexus     = "http://nexus.rugds.org"
 val snapshots = nexus + "/repository/rugds.snapshot.private"
-val releases = nexus + "/repository/rugds.release.private"
+val releases  = nexus + "/repository/rugds.release.private"
 
 val nexusOss     = "http://nexus.rugds.org"
 val snapshotsOss = nexusOss + "/repository/rugds.snapshot.oss"
 val releasesOss  = nexusOss + "/repository/rugds.release.oss"
+
 
 val repositories = Seq(
   "RugDS Private Snapshots" at snapshots,
@@ -19,4 +20,4 @@ val repositories = Seq(
 resolvers ++= repositories
 
 
-addSbtPlugin("rugds" % "sbt-scala-parent" % "0.7.0")
+addSbtPlugin("rugds" % "sbt-scala-parent" % "0.9.0")
