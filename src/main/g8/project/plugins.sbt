@@ -14,8 +14,7 @@ val repositories = Seq(
   "RugDS OSS Snapshots"     at snapshotsOss,
   "RugDS OSS Releases"      at releasesOss,
   "typesafe"                at "http://repo.typesafe.com/typesafe/releases",
-  "scalaz-bintray"          at "http://dl.bintray.com/scalaz/releases",
-  "sbt-plugin-releases"     at "https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases"
+  "scalaz-bintray"          at "http://dl.bintray.com/scalaz/releases"
 )
 
 resolvers ++= repositories
