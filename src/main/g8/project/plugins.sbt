@@ -21,6 +21,4 @@ val repositories = Seq(
 resolvers ++= repositories
 
 
-addSbtPlugin("org.foundweekends.giter8" % "sbt-giter8-scaffold" % "0.7.1")
-
 addSbtPlugin("rugds" % "sbt-scala-parent" % "0.9.0")
