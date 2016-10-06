@@ -14,12 +14,13 @@ val repositories = Seq(
   "RugDS OSS Snapshots"     at snapshotsOss,
   "RugDS OSS Releases"      at releasesOss,
   "typesafe"                at "http://repo.typesafe.com/typesafe/releases",
-  "scalaz-bintray"          at "http://dl.bintray.com/scalaz/releases"
+  "scalaz-bintray"          at "http://dl.bintray.com/scalaz/releases",
+  "sbt-plugin-releases"     at "https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases"
 )
 
 resolvers ++= repositories
 
 
-addSbtPlugin("org.foundweekends.giter8" % "giter8-scaffold" % "0.7.1")
+addSbtPlugin("org.foundweekends.giter8" % "sbt-giter8-scaffold" % "0.7.1")
 
 addSbtPlugin("rugds" % "sbt-scala-parent" % "0.9.0")

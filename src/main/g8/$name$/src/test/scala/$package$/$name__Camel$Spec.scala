@@ -1,4 +1,4 @@
-package $organization$.$name;format="word-only"$
+package $package$
 
 //import org.scalatest.FunSpec
 
