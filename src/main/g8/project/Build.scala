@@ -3,7 +3,7 @@ import sbt.Keys._
 import rugds.sbt._
 
 object ScalaBuild extends Build {
-  lazy val $name;format="camel"$Main = mainProject
+  lazy val $name;format="camel"$Main = mainProject("$main_project_name$")
     .aggregate($name;format="camel"$Project)
 
   lazy val $name;format="camel"$Project = defineProject(scalaProject, "$name$") settings (
