@@ -1,1 +1,3 @@
-seq(giter8Settings :_*)
+giter8Settings
+
+giter8.ScaffoldPlugin.scaffoldSettings
