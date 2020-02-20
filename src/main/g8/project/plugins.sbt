@@ -20,4 +20,4 @@ val repositories = Seq(
 resolvers ++= repositories
 
 
-addSbtPlugin("rugds" % "sbt-scala-parent" % "0.11.0")
+addSbtPlugin("rugds" % "sbt-scala-parent" % "0.13.0")
